@@ -1,0 +1,50 @@
+Images are stored as pixels in arrays.
+The image is shaped in this fasion
+( ROWS, COLUMNS, CHANNELS )
+
+The rows and columns make up the pixels of the image and the channels stand in for the color.
+For example. At the top left coordinate, lets assume its (0, 0) it will have a channel which will probably say 2 or 3.
+For most images you will be using BGR or RGB channels. 
+
+If you want to find this data about any given image do:
+print(image.shape)
+OUTPUT: (290, 364, 3)  -- This tells us that this image is 290x364 pixels. 290 Rows and 364 columns.
+ROWS: HEIGHT,  COLUMNS: WIDTH,  CHANNELS: COLOR
+
+
+This is roughly how the image shape looks in numpy:
+Full image
+[
+    # Each array at this top level is considered a row (part of the height), inside them will have X many columns as the width of the image
+    # Each index of row and column (every box) should have 3 values, this is where your color information is stored in the form RGB amounts
+    [ [255, 255, 255], [0, 0 ,0], [142, 142, 942] ]
+    [ [...], [...], [...] ],
+    [ [...], [...], [...] ]
+]
+
+If you wanted to index this and get the top left pixel in this example you'd do: 
+print(image[0][0])
+OUTPUT: [255, 255, 255]
+
+printing a range of pixel information: In row 30 print from col 80 to 100
+print(image[30][80:100])
+[[252 255 253]
+ [252 255 253]
+ [251 254 252]
+ [251 254 252]
+ [252 255 253]
+ [250 253 251]
+ [251 254 252]
+ [248 251 249]
+ [239 244 242]
+ [232 237 235]
+ [232 235 233]
+ [223 226 224]
+ [209 212 210]
+ [183 184 182]
+ [162 163 161]
+ [148 149 147]
+ [139 135 134]
+ [122 118 117]
+ [117 113 112]
+ [118 114 113]]
