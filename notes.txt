@@ -11,6 +11,7 @@ print(image.shape)
 OUTPUT: (290, 364, 3)  -- This tells us that this image is 290x364 pixels. 290 Rows and 364 columns.
 ROWS: HEIGHT,  COLUMNS: WIDTH,  CHANNELS: COLOR
 
+height = image.shape[0], width = image.shape[1]
 
 This is roughly how the image shape looks in numpy:
 Full image
