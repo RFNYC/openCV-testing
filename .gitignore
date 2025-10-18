@@ -1,2 +1,2 @@
 # hides venv and all its contents.
-.venv/
+venv/

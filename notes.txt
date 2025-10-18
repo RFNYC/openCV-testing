@@ -1,3 +1,5 @@
+pip freeze > requirements.txt  | to automatically generate requirements file.
+
 Images are stored as pixels in arrays.
 The image is shaped in this fasion
 ( ROWS, COLUMNS, CHANNELS )
