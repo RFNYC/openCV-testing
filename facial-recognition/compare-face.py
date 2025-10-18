@@ -3,7 +3,7 @@ import face_recognition
 
 # initialize photo & find faces
 robert = face_recognition.load_image_file('../assets/known-people/robert.jpeg')
-unknown_image = face_recognition.load_image_file('../assets/unknown/byte-team.jpeg')
+unknown_image = face_recognition.load_image_file('../assets/unknown/redbull.jpeg')
 
 # .face_encodings(x) returns an array of these sort of digital finger prints for each face it finds in the image.
 # you can compare these digital finger prints to tell if you found a match for a specific face.
