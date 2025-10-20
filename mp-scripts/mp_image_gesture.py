@@ -7,7 +7,6 @@ import time
 
 cwd = Path(__file__).parent
 model_path = cwd / 'gesture_recognizer.task'
-image_path = str(cwd / 'thumbsup.jpg')
 
 # Base settings
 BaseOptions = mp.tasks.BaseOptions
@@ -42,7 +41,7 @@ with GestureRecognizer.create_from_options(my_options) as gesture_appliance:
             timestamp_ms = int(time.time() * 1000)
 
             gesture_appliance.recognize_async(mediapipe_image, timestamp_ms)
-            
+
             cv.imshow('display window', my_image)
 
             k = cv.waitKey(0)
