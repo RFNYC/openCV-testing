@@ -13,10 +13,12 @@ while True:
     
     cv.imshow('Display window', frame)
 
-    # waits 1 millisecond for each frame
+    # waits 10 millisecond for each frame
     # if the keystroke returns a number that is equal to the ord value of q, the frame cycling loop will end.
     # essentially meaning if you pressed q do this thing.
-    if cv.waitKey(1) == ord('q'):
+
+    # cv.waitKey(x) monitors keystrokes and it delays the next openCV frame by X milliseonds. So if you want to save processing power
+    if cv.waitKey(10) == ord('q'):
         break
 
 # closing video
